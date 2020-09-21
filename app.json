@@ -1,0 +1,21 @@
+{
+  "pages": [
+    "pages/first/first",
+    "pages/tianqi/tianqi",
+      "pages/new1/new1",
+    
+    
+  
+    
+    "pages/index/index",
+    "pages/logs/logs"
+    
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json"
+}

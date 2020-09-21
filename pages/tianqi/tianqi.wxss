@@ -1,0 +1,46 @@
+/* pages/tianqi/tianqi.wxss */
+/* pages/movie-shousuo/movie-shousuo.wxss */
+page{
+  height: 100%;
+  width: 100%;
+  background-color: #82DBE4;
+}
+
+.sousuo{
+  background-color: rgb(78, 198, 202);
+  padding: 20rpx 30rpx;
+
+}
+.sousuokuang{
+  background: white;
+  border-radius:10rpx ;
+  padding: 6rpx;
+  display: flex;
+ 
+}
+.bigger{
+  width: 45rpx;
+  height: 45rpx;
+  padding-top:10rpx; 
+   padding-left:10rpx; 
+  
+}
+.sousuokuang input{
+  height: 60rpx;
+  padding-left:10rpx; 
+  color: #ccc;
+  font-size: 35rpx;
+}
+.sousuonierong{
+  display: flex;
+  padding-left:30rpx;
+  padding-right: 30rpx;
+  
+}
+.sousuonierong1{
+  
+  width: 100%;
+  font-size: 40rpx;
+  color: white;
+  border-bottom: 1px solid rgba(231, 231, 231, 0.534);
+}

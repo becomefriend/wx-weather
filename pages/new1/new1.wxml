@@ -1,0 +1,79 @@
+<!--pages/new1/new1.wxml-->
+   <!---
+ *　　　　　　　　┏┓　　　┏┓+ +
+ *　　　　　　　┏┛┻━━━┛┻┓ + +
+ *　　　　　　　┃　　　　　　　┃ 　
+ *　　　　　　　┃　　　━　　　┃ ++ + + +
+ *　　　　　　 ████━████+
+ *　　　　　　　┃　　　　　　　┃ +
+ *　　　　　　　┃　　　┻　　　┃
+ *　　　　　　　┃　　　　　　　┃ + +
+ *　　　　　　　┗━┓　　　┏━┛
+ *　　　　　　　　　┃　　　┃　　　　　　　　　　　
+ *　　　　　　　　　┃　　　┃ + + + +
+ *　　　　　　　　　┃　　　┃　　　　　　　
+ *　　　　　　　　　┃　　　┃ + 　　　　神兽镇楼、加油、无BUG　
+ *　　　　　　　　　┃　　　┃
+ *　　　　　　　　　┃　　　┃　　+　　　　　　　　　
+ *　　　　　　　　　┃　 　　┗━━━┓ + +
+ *　　　　　　　　　┃ 　　　　　　　┣┓
+ *　　　　　　　　　┃ 　　　　　　　┏┛
+ *　　　　　　　　　┗┓┓┏━┳┓┏┛ + + + +
+ *　　　　　　　　　　┃┫┫　┃┫┫
+ *　　　　　　　　　　┗┻┛　┗┻┛+ + + +
+
+--->
+<view class='top'>
+  <view class='city' bindtap='toshousuo'>
+   <view>+</view>
+   <view>{{tianqineirong.city}}</view>
+   </view>
+  <view class='data'>{{tianqineirong.data[0].date}}</view>
+</view>
+<view class='body'>
+  <view class='body-center'>{{tianqineirong.data[0].tem}}</view>
+  <view class='body-pinfen'>{{tianqineirong.data[0].air_tips}}</view>
+  <view class='pinjia2'>{{tianqineirong.data[0].wea}}</view>
+  <view class='pinfjai'>
+    
+    <image src='../tianqi/img/f.png' class='tu'></image>
+    <view class='pinjia'>{{tianqineirong.data[0].win_speed}}</view>
+    <view>/</view>
+    <image src='../tianqi/img/water.png' class='tu'></image>
+    <view class='pinjia'>{{tianqineirong.data[0].humidity}}</view>
+    <view>%</view>
+  </view>
+
+  <view class='body-pinjia'>
+    <view class='body-pinjia-suzi'>{{tianqineirong.data[0].air}}</view>
+    <view class='body-pinjia-1'>.</view>
+    <view class='body-pinjia-p'>{{tianqineirong.data[0].air_level}}</view>
+  </view>
+
+</view>
+<view class='foot'>
+  <scroll-view class='scroll' scroll-x='true'>
+    <view class='list-body'>
+      <view class='first' wx:for="{{tianqineirong.data[0].hours}}" wx:key="{{ll}}">
+        <view class='time'>{{item.day}}</view>
+        <view class='tianqi'>{{item.wea}}</view>
+        <view class='wendu'>{{item.tem}}</view>
+        <view class='fenxiang'>
+        <image src='../tianqi/img/f.png' class='tu'></image>
+       <view>{{item.win_speed}}</view>
+       
+       </view>
+      </view>
+    </view>
+  </scroll-view>
+
+</view>
+<view class='nexttianqi' wx:for="{{tianqineirong.data}}" wx:key="{{ll}}">
+  <view class='nexttianqi-time'>{{item.day}}</view>
+  <view class='nexttianqi-yuchei'>{{item.wea}}</view>
+  <view class='nexttianqi-wengdu'>
+    <view class='low'>{{item.tem2}}</view>
+    <view>~</view>
+    <view class='hight'>{{item.tem1}}</view>
+  </view>
+</view>

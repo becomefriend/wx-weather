@@ -1,0 +1,12 @@
+<!--pages/tianqi/tianqi.wxml-->
+
+<view class='sousuo'>
+  <view class='sousuokuang'>
+    <image src='img/bigger.png' class='bigger'></image>
+    <input placeholder='请输入你要搜索的城市' bindinput='inputneirong'></input>
+  </view>
+</view>
+
+<view class='sousuonierong'>
+   <view class='sousuonierong1' bindtap='toxiangqin' data-id="{{tianqineirong.cityid}}">{{tianqineirong.city}}</view>
+</view>
